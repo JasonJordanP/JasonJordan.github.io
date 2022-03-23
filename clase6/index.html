@@ -12,12 +12,27 @@
 
         <section>
             <h1>Clase 6</h1>
-            <form action="AltaUsuario.html">
-                <input type="file" required>
-                <input type="month">
-                <br>
-                <input type="submit" value="Enviar">
-            </form>
+            <fieldset>
+                <legend>
+                    Alta de usuario
+                </legend>
+                <form action="AltaUsuario.html">
+                    <input type="file" name="dni-frente">
+                    <input type="hidden" value="valorOculto" name="campohidden">
+                    
+                     <!--LA ETIQUETA REQUIRED LO HACE UN DATO A LLENAR OBLIGATORIAMENTE-->
+                    <input type="url" name="url" required placeholder="Ingrese una página web">
+                    <input type="text" name="nombre" required placeholder="Ingrese su nombre">
+
+                    <input type="text" name="números" required placeholder="Ingrese un número del 0 al 9" pattern="[0-9]">
+                   
+                    <input type="submit" value="Enviar">
+
+                </form>
+                    
+                   
+                </form>
+            </fieldset>
         </section>
     </main>
 </body>
