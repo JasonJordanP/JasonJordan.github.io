@@ -12,6 +12,12 @@
     <style>
         .email {width: 1050px; height: 20px; padding: 1px}
         .contraseña {width: 1050px; height: 20px; padding: 1px}
+        .container {margin: 0px; padding: 0px}
+        .table td, .table th { padding: 0; }
+        h4 {padding: 5px;}
+        p {padding: 5px;}
+        figcaption {padding-left: 5px;}
+        img {size-adjust: 135;}
         
     </style>
 </head>
@@ -47,28 +53,107 @@
 
 <main class="container">
     <section>
+        <div class="table">
+        <table class="table table-bordered">
+          <tbody>
+            <tr> 
+              <td>
+                <img src="html2.png" class="img-fluid" height="450" width="1200" alt="">
+                  <h4>titulo 1</h4>
+                  <p>Contenido de Card</p>
+                  <br>
+                <figcaption class="figure-caption text-left">Ultima actualización 1</figcaption>
+              </td>
+
+              <td>
+                <img src="css.png" class="img-fluid" height="440" width="1200"alt="">
+
+                    <h4>titulo 2</h4>
+                    <p>Contenido de Card</p>
+                    <br>
+                    <figcaption class="figure-caption text-left">Ultima actualización 1</figcaption>
+              </td> 
+              <td>
+                  <img src="bootstrap.png" class="img-fluid" height="450" width="1200" alt="">
+                  <h4>titulo 3</h4>
+                  <p>Contenido de Card</p>
+                  <br>
+                  <figcaption class="figure-caption text-left">Ultima actualización 1</figcaption>
+              </td> 
+            </tr>
+          </tbody>
+         </table> 
+        </div>
+    </section>
+  </main>
+
+<body>
+  <section>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Nunca comparta su email.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Verificar</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+</body>
+
+
+</html>
+            <!--
         <div class="row">
             <div class="col-4">
-                <figure class="figure">
-                    <img src="html.jpg" class="img-thumbnail">
+                <figure class="img-thumbnail">
+                    <img src="html.jpg" class="img-fluid" alt="">
                     <h3>titulo 1</h3>
                     <p>Contenido de Card</p>
                     <br>
                     <figcaption class="figure-caption text-left">Ultima actualización.</figcaption>
                 </figure>
             </div>
+
             <div class="col-4">
-                <figure class="figure">
-                    <img src="css.png" class="img-thumbnail">
+              
+              <div class="img-thumbnail">
+                  <img src="css.png" class="img-fluid" alt="">
+                  <div class="caption">
                     <h3>titulo 2</h3>
                     <p>Contenido de Card</p>
                     <br>
                     <figcaption class="figure-caption text-left">Ultima actualización.</figcaption>
+                  </div>
+                </div>
+            </div>
+
+             
+            <div class="col-4">
+              
+                <figure class="figure">
+                    <img src="css.png" class="img-thumbnail">
+                    <div class="caption">
+                      <h3>titulo 2</h3>
+                      <p>Contenido de Card</p>
+                      <br>
+                      <figcaption class="figure-caption text-left">Ultima actualización.</figcaption>
+                    </div>
                 </figure>
             </div>
+
+    
+
             <div class="col-4">
-                <figure class="figure">
-                    <img src="bootstrap.png" class="img-thumbnail">
+                <figure class="img-thumbnail">
+                    <img src="bootstrap.png" class="img-fluid" alt="">
                     <h3>titulo 3</h3>
                     <p>Contenido de Card</p>
                     <br>
@@ -77,25 +162,7 @@
             </div>
         </div>
     </section>
-</main>
-<body>
- 
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Nunca comparta su email.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Verificar</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-        
-</body>
-</html>
+                  -->
+
+    
+
