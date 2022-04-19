@@ -26,7 +26,10 @@
           opacity: 0.4;
         }
         .card {
-          float: right; border: 0px; text-align: right;
+          float: right; text-align: right; border-color: rgb(243, 242, 242);
+        }
+        #specialcard{
+          float: right; text-align: right; border: 0px
         }
         .card-body {
           padding-top: 10%; padding-right: 10%; font-weight: 400; font-size: smaller;
@@ -38,7 +41,7 @@
           background-color: rgb(5, 151, 5); font-size: small; font-weight: 500; outline-style:none; color: white;
         }
         .card-body-oradores {
-          text-align: left; outline: grey; padding: 20px;
+          text-align: left; padding: 20px;
         }
         #losbotones {
           font-weight: bold;
@@ -70,9 +73,13 @@
         #botonTransparenteDos {
           margin-top: 15px;
         }
-        figcaption {
-          padding: 0px;
+        #exampleFormControlTextarea1 {
+          align-self: center; margin-left: 450px;
         }
+        figcaption {
+          padding-top: 12px; padding-bottom: 12px; 
+        }
+       
         #botonEnviar {
           background-color: rgb(104, 206, 21); border-color:rgb(104, 206, 21) ; font-weight: 400; font-size: larger;
         }
@@ -118,11 +125,11 @@
 <main class="containerUno">
   <div class="card bg-dark text-white text-right">
     
-    <img src="hawai.jpg" class="card-img" alt="...">
+    <img src="hawai.jpg" class="card-img" id= "specialcard" alt="...">
       <div class="card-img-overlay">
       
       <div class="card-body">
-        <div class="card text-right" style="width: 35rem; background-color: transparent; ">
+        <div class="card text-right" id= "specialcard" style="width: 35rem; background-color: transparent; ">
         
           <h2>Conf Bs As</h2>
           <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el 
@@ -139,9 +146,6 @@
   </div>    
 </main>
 <br>
-<br>
-<br>
-<br>
 <div class="conocerOradores">
   <p id="sinmargin">CONOCE A LOS</p>
   <H2>ORADORES</H2>
@@ -150,7 +154,7 @@
 <body class="container container-fluid">
   <div class="row justify-content-center">
     <div class="col col-3">
-      <div class="card border-secondary h-100">
+      <div class="card h-100">
         <img src="steve.jpg" class="card-img-top" alt="...">
         <div class="card-body-oradores">
           <button type="button" class="btn btn-warning btn-sm" id="losbotones">JavaScript</button>
@@ -162,7 +166,7 @@
     </div>
 
     <div class="col col-3">
-      <div class="card border-secondary h-100">
+      <div class="card h-100">
         <img src="bill.jpg" class="card-img-top" alt="...">
         <div class="card-body-oradores">
           <button type="button" class="btn btn-warning btn-sm" id="losbotones">JavaScript</button>
@@ -174,7 +178,7 @@
     </div>
 
     <div class="col col-3">
-      <div class="card border-secondary h-100">
+      <div class="card h-100">
         <img src="ada.jpeg" class="card-img-top" alt="...">
         <div class="card-body-oradores">
           <button type="button" class="btn btn-secondary btn-sm" id="losbotones">Negocios</button>
@@ -186,7 +190,7 @@
     </div>
   </div>
   
-  
+<br>  
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row">
       <div class="col-md-6">
@@ -211,20 +215,22 @@
     <H2>ORADOR</H2>
     <p>Anótate como orador para dar una <span style="border-bottom-style: dotted;">charla ignite </span>. Cuéntanos de qué quieres hablar!</p>
     
-    <div class="row container-fluid">
-        <div class= "col-6">
+    <div class="row container-fluid justify-content-center">
+        <div class= "col-sm-4">
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
         </div>
-        <div class="col-6">
+        <div class="col-sm-4">
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
         </div>
     </div>
     <br>
 
-    <div class="row mb-3 container-fluid">
-      <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+    <div class="row col-mb-6 container-fluid justify-content-center">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+      <br>
       <figcaption class="figure-caption text-start">Recuerda incluir un título para tu charla</figcaption>  
     </div>
+    
     <div class="d-grid gap-2">
       <button class="btn btn-primary" type="button" id="botonEnviar">Enviar</button>
   </section>
