@@ -29,11 +29,13 @@
           float: right; border: 0px; text-align: right;
         }
         .card-body {
-          padding-top: 20%; padding-right: 10%; font-weight: 400; font-size: smaller;
+          padding-top: 10%; padding-right: 10%; font-weight: 400; font-size: smaller;
         }
-        
+        #linkSeleccionado {
+          color: white;
+        }
         #botonVerde {
-          background-color: rgb(5, 151, 5); font-size: small; font-weight: 500; outline-style: none; color: white;
+          background-color: rgb(5, 151, 5); font-size: small; font-weight: 500; outline-style:none; color: white;
         }
         .card-body-oradores {
           text-align: left; outline: grey; padding: 20px;
@@ -54,16 +56,28 @@
           margin: 0%; padding: 0%; max-width: 100%;
         }
         .card-body-dos {
-          background-color: darkslategrey;
+          background-color: #323636;
         }
         .col-md-6 {
           padding: 0px; color: white;
         }
         .card-text-dos {
-          font-size: small; height:333px !important;
+          font-size: small; height:374px !important; padding: 20px; border: 5px;
+        }
+        h3 {
+          margin-left: 20px; margin-right: 20px; padding-top: 20px;
         }
         #botonTransparenteDos {
-          align-content: flex-start;
+          margin-top: 15px;
+        }
+        figcaption {
+          padding: 0px;
+        }
+        #botonEnviar {
+          background-color: rgb(104, 206, 21); border-color:rgb(104, 206, 21) ; font-weight: 400; font-size: larger;
+        }
+        #pie {
+          color: white;
         }
          
     </style>
@@ -76,11 +90,11 @@
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="codoacodo.png" alt="" width="130" height="80" class="d-inline-block">
-                Conf BsAs
+                Conf Bs As
     
-                <ul class="nav justify-content-end">
+                <ul class="nav justify-content-center">
                     <li class="nav-item">
-                      <a href="#" class="nav-link active" aria-current="page">La conferencia</a>
+                      <a href="#" class="nav-link active" id="linkSeleccionado" aria-current="page">La conferencia</a>
                     </li>
                     <li class="nav-item">
                       <a href="#" class="nav-link" href="#">Los oradores</a>
@@ -104,7 +118,7 @@
 <main class="containerUno">
   <div class="card bg-dark text-white text-right">
     
-    <img src="hawaii.jpg" class="card-img" alt="...">
+    <img src="hawai.jpg" class="card-img" alt="...">
       <div class="card-img-overlay">
       
       <div class="card-body">
@@ -126,6 +140,8 @@
 </main>
 <br>
 <br>
+<br>
+<br>
 <div class="conocerOradores">
   <p id="sinmargin">CONOCE A LOS</p>
   <H2>ORADORES</H2>
@@ -140,7 +156,7 @@
           <button type="button" class="btn btn-warning btn-sm" id="losbotones">JavaScript</button>
           <button type="button" class="btn btn-info btn-sm" id="losbotones" style="color: white;">React</button>
           <h5 class="card-title">Steve Jobs</h5>
-          <p class="card-text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, esse, blanditiis veniam autem expedita cum qui eum enim dolore unde explicabo mollitia libero vitae dignissimos distinctio, facere culpa voluptates eveniet.</p>
+          <p class="card-text2 fs-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, esse, blanditiis veniam autem expedita cum qui eum enim dolore unde explicabo mollitia libero vitae dignissimos distinctio, facere culpa voluptates eveniet.</p>
         </div>
       </div>
     </div>
@@ -152,7 +168,7 @@
           <button type="button" class="btn btn-warning btn-sm" id="losbotones">JavaScript</button>
           <button type="button" class="btn btn-info btn-sm" id="losbotones" style="color: white;">React</button>
           <h5 class="card-title">Bill Gates</h5>
-          <p class="card-text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, esse, blanditiis veniam autem expedita cum qui eum enim dolore unde explicabo mollitia libero vitae dignissimos distinctio, facere culpa voluptates eveniet.</p>
+          <p class="card-text2 fs-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, esse, blanditiis veniam autem expedita cum qui eum enim dolore unde explicabo mollitia libero vitae dignissimos distinctio, facere culpa voluptates eveniet.</p>
         </div>      
       </div>
     </div>
@@ -164,7 +180,7 @@
           <button type="button" class="btn btn-secondary btn-sm" id="losbotones">Negocios</button>
           <button type="button" class="btn btn-danger btn-sm" id="losbotones">Startups</button>
           <h5 class="card-title">Ada Lovelace</h5>
-          <p class="card-text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, esse, blanditiis veniam autem expedita cum qui eum enim dolore unde explicabo mollitia libero vitae dignissimos distinctio, facere culpa voluptates eveniet.</p>
+          <p class="card-text2 fs-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, esse, blanditiis veniam autem expedita cum qui eum enim dolore unde explicabo mollitia libero vitae dignissimos distinctio, facere culpa voluptates eveniet.</p>
         </div>    
       </div>
     </div>
@@ -174,19 +190,70 @@
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row">
       <div class="col-md-6">
-        <img src="honolulu.jpg" class="img-fluid" alt="...">
+        <img src="honolulu.jpg" class="img-fluid" id="honolulu" alt="...">
       </div>
       <div class="col-md-6">
-        <div class="card-body-dos">
-          <h1 class="card-title">Bs As - Octubre</h1>
+        <div class="card-body-dos text-start">
+          <h3 class="card-title">Bs As - Octubre</h3>
           <p class="card-text-dos">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
             se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidad que cubre toda la ciudad
-            (aproximadamente 600 km2 de superficie).
-          </p>
+            (aproximadamente 600 km2 de superficie)
+            <br>
           <a href="#" class="btn btn-outline-light btn-sm" id="botonTransparenteDos">Conocé más</a>
         </div>
       </div>
     </div>
   </div>
+
+  <section class="container-fluid">
+  <div class="conocerOradores">
+    <p id="sinmargin">CONVIÉRTETE EN UN</p>
+    <H2>ORADOR</H2>
+    <p>Anótate como orador para dar una <span style="border-bottom-style: dotted;">charla ignite </span>. Cuéntanos de qué quieres hablar!</p>
+    
+    <div class="row container-fluid">
+        <div class= "col-6">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+        </div>
+        <div class="col-6">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+        </div>
+    </div>
+    <br>
+
+    <div class="row mb-3 container-fluid">
+      <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+      <figcaption class="figure-caption text-start">Recuerda incluir un título para tu charla</figcaption>  
+    </div>
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary" type="button" id="botonEnviar">Enviar</button>
+  </section>
 </body>
+<br>
+<footer>
+  <ul class="nav navbar-dark justify-content-center" style="background-color: rgb(10, 71, 100); padding: 20px;">
+    <li class="nav-item">
+      <a class="nav-link" id="pie" href="#">Preguntas frecuentes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pie" href="#">Contáctanos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pie" href="#">Prensa</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pie" href="#">Conferencias</a>
+    </li>
+    <li class="nav-item"> 
+      <a class="nav-link" id="pie" href="#">Términos y condiciones</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pie" href="#">Privacidad</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pie" href="#">Estudiantes</a>
+    </li>
+    
+  </ul>
+</footer>
 </html>
