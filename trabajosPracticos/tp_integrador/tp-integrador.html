@@ -77,11 +77,11 @@
           align-self: center; margin-left: 450px;
         }
         figcaption {
-          padding-top: 12px; padding-bottom: 12px; 
+          padding-top: 12px; padding-bottom: 12px; padding-left: 0%; margin-left: 420px;
         }
        
         #botonEnviar {
-          background-color: rgb(104, 206, 21); border-color:rgb(104, 206, 21) ; font-weight: 400; font-size: larger;
+          background-color: rgb(104, 206, 21); border-color:rgb(104, 206, 21) ; font-weight: 400; font-size: larger; width: 830px; height:50px; margin-left: 238px;
         }
         #pie {
           color: white;
@@ -194,7 +194,7 @@
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row">
       <div class="col-md-6">
-        <img src="honolulu.jpg" class="img-fluid" id="honolulu" alt="...">
+        <img src="honolulu.jpg" class="img-fluid" alt="...">
       </div>
       <div class="col-md-6">
         <div class="card-body-dos text-start">
@@ -220,17 +220,17 @@
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
         </div>
         <div class="col-sm-4">
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido" style= "margin-left: 8px">
         </div>
     </div>
     <br>
 
-    <div class="row col-mb-6 container-fluid justify-content-center">
+    <div class="row col-sm-8 container-fluid justify-content-center">
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
-      <br>
+      
       <figcaption class="figure-caption text-start">Recuerda incluir un título para tu charla</figcaption>  
     </div>
-    
+    <br>
     <div class="d-grid gap-2">
       <button class="btn btn-primary" type="button" id="botonEnviar">Enviar</button>
   </section>
