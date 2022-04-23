@@ -25,9 +25,6 @@
         .card-img {
           opacity: 0.4;
         }
-        .card-two {
-          float:right ; text-align: right; text-align: center;
-        }
         .card {
           float: right; text-align: right; border-color: rgb(243, 242, 242);
         }
@@ -35,7 +32,7 @@
           float: right; text-align: right; border: 0px
         }
         .card-body {
-          padding-top: 22%; padding-right: 10%; font-weight: 400; font-size: smaller;
+          padding-top: 10%; padding-right: 10%; font-weight: 400; font-size: smaller;
         }
         #linkSeleccionado {
           color: white;
@@ -94,42 +91,37 @@
     
 </head>
 
-<header class="navbar navbar-dark" style="background-color: rgb(63, 62, 62);">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+<header class="p-1 bg-dark text-white">
+
+        <div class="container d-flex flex-wrap">
+            <ul class="navbar-brand me-auto">
                 <img src="codoacodo.png" alt="" width="130" height="80" class="d-inline-block">
                 Conf Bs As
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 text-white">La Conferencia</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 text-secondary">Los oradores</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 text-secondary">El lugar y la
+                        fecha</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 text-secondary">Conviértete en
+                        orador</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 text-success">Comprar tickets</a>
+                </li>
+            </ul>
+        </div>
     
-                <ul class="nav">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link active" id="linkSeleccionado" aria-current="page">La conferencia</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link" href="#">Los oradores</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link" href="#">El lugar y la fecha</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">Conviértete en orador</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link active" id="linkactivo" aria-current="page" href="#">Comprar tickets</a>
-                      </li>
-                  </ul>
-              </a>
-            </div>
 </header>
 
 
 <main class="containerUno">
-  <div class="card-two bg-dark text-white text-right">
+  <div class="card bg-dark text-white text-right">
     
     <img src="hawai.jpg" class="card-img" id= "specialcard" alt="...">
       <div class="card-img-overlay">
       
       <div class="card-body">
-        <div class="card-two text-right" id= "specialcard" style="width: 35rem; background-color: transparent;">
+        <div class="card text-right" id= "specialcard" style="width: 35rem; background-color: transparent; ">
         
           <h2>Conf Bs As</h2>
           <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el 
