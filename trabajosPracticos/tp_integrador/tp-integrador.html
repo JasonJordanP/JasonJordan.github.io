@@ -89,11 +89,11 @@
         .navbar-brand {
           padding-left: 80px; font-size: x-large;
         }
-         
+       
     </style>
 </head>
 
-<header class="navbar navbar-dark justify-content-end" style="background-color: rgb(63, 62, 62);">
+<header class="navbar navbar-dark justify-content-end" style="background-color: rgb(63, 62, 62); z-index: 1;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="codoacodo.png" alt="" width="130" height="75">
@@ -102,25 +102,25 @@
         
       <ul class="nav" style="padding-right: 80px;">
         <li class="nav-item">
-          <a href="#" class="nav-link active" id="linkSeleccionado" aria-current="page">La conferencia</a>
+          <a href="#LaConferencia" class="nav-link active" id="linkSeleccionado" aria-current="page">La conferencia</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Los oradores</a>
+          <a href="#Oradores" class="nav-link">Los oradores</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">El lugar y la fecha</a>
+          <a href="#LugarYFecha" class="nav-link">El lugar y la fecha</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Conviértete en orador</a>
+          <a href="#ConvierteteOrador" class="nav-link">Conviértete en orador</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link active" id="linkactivo" aria-current="page">Comprar tickets</a>
+          <a href="#ComprarTickets" class="nav-link active" id="linkactivo" aria-current="page">Comprar tickets</a>
         </li>
       </ul>
     </div>
 </header>
 
-
+<a name="LaConferencia" id="LaConferencia"></a>
 <body class="container container-fluid">
   <div class="card-two bg-dark text-white text-right">
     
@@ -146,11 +146,13 @@
 
 <br>
 
+
 <div class="conocerOradores">
   <p id="sinmargin">CONOCE A LOS</p>
   <H2>ORADORES</H2>
 </div>
 
+<a name="Oradores" id="Oradores"></a>
 <div class="container container-fluid">
   <div class="row justify-content-center">
     <div class="col col-3">
@@ -192,6 +194,7 @@
 </div>
 
 <br>  
+<a name="LugarYFecha" id="LugarYFecha"></a>
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row">
       <div class="col-md-6">
@@ -210,12 +213,13 @@
     </div>
   </div>
 
+  
   <section class="container-fluid">
     <div class="conocerOradores">
     <p id="sinmargin">CONVIÉRTETE EN UN</p>
     <H2>ORADOR</H2>
     <p>Anótate como orador para dar una <span style="border-bottom-style: dotted;">charla ignite </span>. Cuéntanos de qué quieres hablar!</p>
-    
+    <a name="ConvierteteOrador" id="ConvierteteOrador"></a>
     <div class="row container-fluid justify-content-center">
         <div class= "col-sm-4">
           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
@@ -241,25 +245,25 @@
 
 <footer>
   <ul class="nav navbar-dark justify-content-center" style="background-color: rgb(10, 71, 100); padding: 40px;">
-    <li class="nav-item">
-      <a class="nav-link" id="pie" href="#">Preguntas frecuentes</a>
+    <li class="nav-item px-4">
+      <a class="nav-link" id="pie" style="text-align: center;"href="#">Preguntas <br>frecuentes</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item px-4">
       <a class="nav-link" id="pie" href="#">Contáctanos</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item px-4">
       <a class="nav-link" id="pie" href="#">Prensa</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item px-4">
       <a class="nav-link" id="pie" href="#">Conferencias</a>
     </li>
-    <li class="nav-item"> 
-      <a class="nav-link" id="pie" href="#">Términos y condiciones</a>
+    <li class="nav-item px-4"> 
+      <a class="nav-link" id="pie" style="text-align: center;" href="#">Términos y <br>condiciones</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item px-4">
       <a class="nav-link" id="pie" href="#">Privacidad</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item px-4">
       <a class="nav-link" id="pie" href="#">Estudiantes</a>
     </li>
   </ul>
