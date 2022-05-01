@@ -37,6 +37,7 @@ let persona = {
 
 console.log (persona, typeof persona);
 
+
 //UNDEFINED
 
 let perro= undefined
@@ -55,3 +56,24 @@ console.log (perro, typeof perro)
 
 let gato= null
 console.log (gato, typeof gato)
+
+//CONVERTIR TODO A MAYUSCULAS 
+
+nombre= nombre.toUpperCase();
+console.log (nombre);
+
+//CONVERTIR TODO A MINUSCULAS
+
+nombre= nombre.toLowerCase();
+console.log (nombre);
+
+//CONOCER LA CANTIDAD DE CARACTERES DE UN STRING
+
+console.log (nombre.length);
+
+//SUMAR NUMERO DE STRING COMO SI FUERA VALOR NUMERICO
+
+let numeroString = "100"
+
+numeroString = Number(numeroString) + 1;
+console.log (numeroString);
