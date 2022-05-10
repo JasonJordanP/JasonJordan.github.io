@@ -27,12 +27,13 @@ const personas = [
 
 /* quiero guardar solo los ids */
 
-const filtrados = personas.filter(x => x.edad > 15);
+const filtrados = personas.filter(x => x.edad > 15);   //LO  QUE HACE LA FUNCION FILTER ES VER QUE OBJETOS CUMPLEN CON LA CONDICION QUE LE PEDIMOS
+                                                       //Y LOS MUESTRA COMPLETOS CUANDO ESCRIBIMOS EL CONSOLE.LOG
 
 console.log(filtrados);
 
-const mapeados = personas.map( (x)=>{
-        const nuevo = {
+const mapeados = personas.map( (x)=>{                   //EL MAP SELECCIONA UN ATRIBUTOS DE ESOS OBJECT Y LOS ESCRIBE EN LA CONSOLA. NO TODO
+        const nuevo = {                                 //EL OBJETO, SOLO EL VALOR DEL TIPO DE DATO QUE LE PEDIMOS (POR EJEMPLO EDAD O NOMBRE)
             id: x.id,
             sueldo: x.sueldo
         };
