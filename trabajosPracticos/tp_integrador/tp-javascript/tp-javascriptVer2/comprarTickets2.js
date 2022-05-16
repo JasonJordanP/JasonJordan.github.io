@@ -1,37 +1,73 @@
-const botonResumen = get ('botonResumen');
+const botonResumen = get('botonResumen');
 let totalAPagar;
 const valorDeTicket = 200;
 const descuentoFinalEstudiante = 200*(80/100)
 const descuentoFinalTrainee = 200*(50/100)
 const descuentoFinalJunior = 200*(15/100)
-const cantidadTickets = get('cantidad');
-let inputPrecio = get('precio')
 
 function get(id) {
     return document.getElementById(id);
 }
 
 botonResumen.addEventListener('click', function(){
-  
-    let valor = inputPrecio.value;
+    calcular();
+})
 
-    if (valor === '1') {
-        inputPrecio= (parseInt(valorDeTicket)-parseInt(descuentoFinalEstudiante))
-    }
-    if (valor === '2') {
-        inputPrecio= (paseInt(valorDeTicket)-parseInt(descuentoFinalTrainee)) 
-    }
-    if (valor === '3') {
-        inputPrecio= (parseInt(valorDeTicket)-parseInt(descuentoFinalJunior))
-    }
-    return inputPrecio;
-     
-}) 
+let seleccion = get('select')
 
-function operacion () {
+function detectarDescuentoCorrecto () {
+    
+    let eleccion = seleccion.value;
+    let descuentoCorrecto;
+    
+    if (eleccion === 'estudiante') {
+       descuentoCorrecto = descuentoFinalEstudiante
+    }
+    else if (eleccion === 'trainee') {
+       descuentoCorrecto = descuentoFinalTrainee
+    }
+    else if (eleccion === 'junior') {
+       descuentoCorrecto = descuentoFinalJunior
+    }
+    return descuentoCorrecto
+} 
 
-let entradas = cantidadTickets.value;
-return parseInt(entradas) * parseInt(inputPrecio);
+let cantidadTickets = get('cantidad'); 
+
+function saberCantidad () {
+    let ticketsFinal = Number(cantidadTickets);
+    return ticketsFinal;
 }
+function calcular(ticketsFinal, descuentoCorrecto) {
+    const ValorA = Number(ticketsFinal);
+    const ValorB = Number(descuentoCorrecto);
+    return ValorA * ValorB;
 
-get('totalAPagar').innerHTML = operacion;
+ }
+ 
+get('totalAPagar').innerHTML = calcular();
+    
+ /*const respuesta = get ('totalAPagar')
+
+    const div = document.createElement ('p')
+    div.nodevalue = calcular();
+
+    div.appendChild(respuesta);
+
+
+ 
+  
+    if (precio === "0") {
+        let inputPrecio= (valorDeTicket - descuentoFinalEstudiante);
+        return inputPrecio
+    }
+    if (precio === "1") {
+        let inputPrecio= (valorDeTicket - descuentoFinalTrainee); 
+        return inputPrecio
+    }
+    if (precio === "2") {
+        let inputPrecio= (valorDeTicket - descuentoFinalJunior)
+        return inputPrecio
+    };
+}) 
+*/
